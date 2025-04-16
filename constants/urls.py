@@ -1,0 +1,7 @@
+GET_AVAILABLE_BOOKS = 'http://188.242.25.96:8080/api/v1/available_books'
+GET_CURRENT_STATUSES = 'http://188.242.25.96:8080/api/v1/get_current_statuses'
+LOAD_NEW_BOOK = 'http://188.242.25.96:8080/api/v1/load_new_book'
+REGISTER_USER = 'http://188.242.25.96:8080/api/v1/register'
+RETURN_BOOK = 'http://188.242.25.96:8080/api/v1/return'
+TAKE_A_BOOK = 'http://188.242.25.96:8080/api/v1/take'
+PAY_FIASE = 'http://188.242.25.96:8080/api/v1/pay_fiase'
