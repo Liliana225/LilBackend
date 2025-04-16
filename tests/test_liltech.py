@@ -26,7 +26,7 @@ def UserId():
 @allure.epic("Тесты swagger ui")
 @allure.story("Тесты library")
 @allure.feature("Тесты регистрации пользователя")
-@allure.description("Тест проверяет корректность работы метода post и кодов ответа")
+@allure.description("Вроде Вроде тестпроверяет корректность работы метода post и кодов ответа")
 def test_sign_up1():
     code = 200
     response = steps.registgrateUser(generate_random_string(), "iloveyou")
@@ -36,7 +36,7 @@ def test_sign_up1():
 @allure.epic("Тесты swagger ui")
 @allure.story("Тесты library")
 @allure.feature("Тесты регистрации пользователя")
-@allure.description("Тест проверяет корректность работы метода post и кодов ответа")
+@allure.description("Вроде Вроде тестпроверяет корректность работы метода post и кодов ответа")
 def test_sign_up2():
     code = 400
     response = steps.registgrateUser("", "123")
@@ -46,7 +46,7 @@ def test_sign_up2():
 @allure.epic("Тесты swagger ui")
 @allure.story("Тесты library")
 @allure.feature("Тесты регистрации пользователя")
-@allure.description("Тест проверяет корректность работы метода post и кодов ответа")
+@allure.description("Вроде Вроде тестпроверяет корректность работы метода post и кодов ответа")
 def test_sign_up3():
     code = 400
     response = steps.registgrateUser("Katya", "")
@@ -56,7 +56,7 @@ def test_sign_up3():
 @allure.epic("Тесты swagger ui")
 @allure.story("Тесты library")
 @allure.feature("Тесты регистрации пользователя")
-@allure.description("Тест проверяет корректность работы метода post и кодов ответа")
+@allure.description("Вроде Вроде тестпроверяет корректность работы метода post и кодов ответа")
 def test_sign_up4():
     code = 400
     response = steps.registgrateUser("Lili", "123")
@@ -66,7 +66,7 @@ def test_sign_up4():
 @allure.epic("Тесты swagger ui")
 @allure.story("Тесты library")
 @allure.feature("Тесты взятия книги")
-@allure.description("Тест проверяет корректность работы метода post и кодов ответа")
+@allure.description("Вроде Вроде тестпроверяет корректность работы метода post и кодов ответа")
 def test_take_a_book1(AddABook, UserId):
     code = 200
     book_id = AddABook.json()["id"]
@@ -77,7 +77,7 @@ def test_take_a_book1(AddABook, UserId):
 @allure.epic("Тесты swagger ui")
 @allure.story("Тесты library")
 @allure.feature("Тесты взятия книги")
-@allure.description("Тест проверяет корректность работы метода post и кодов ответа")
+@allure.description("Вроде Вроде тестпроверяет корректность работы метода post и кодов ответа")
 def test_take_a_book2(UserId):
     code = 400
     response = steps.takeABook(7, UserId)
@@ -87,7 +87,7 @@ def test_take_a_book2(UserId):
 @allure.epic("Тесты swagger ui")
 @allure.story("Тесты library")
 @allure.feature("Тесты взятия книги")
-@allure.description("Тест проверяет корректность работы метода post и кодов ответа")
+@allure.description("Вроде Вроде тестпроверяет корректность работы метода post и кодов ответа")
 def test_take_a_book3(UserId):
     code = 400
     response = steps.takeABook(65, UserId)
@@ -97,7 +97,7 @@ def test_take_a_book3(UserId):
 @allure.epic("Тесты swagger ui")
 @allure.story("Тесты library")
 @allure.feature("Тесты взятия книги")
-@allure.description("Тест проверяет корректность работы метода post и кодов ответа")
+@allure.description("Вроде Вроде тестпроверяет корректность работы метода post и кодов ответа")
 def test_take_a_book4(UserId):
     code = 400
     response = steps.takeABook(65, UserId)
@@ -107,7 +107,7 @@ def test_take_a_book4(UserId):
 @allure.epic("Тесты swagger ui")
 @allure.story("Тесты library")
 @allure.feature("Тесты добавления книги")
-@allure.description("Тест проверяет корректность работы метода post и кодов ответа")
+@allure.description("Вроде Вроде тестпроверяет корректность работы метода post и кодов ответа")
 def test_add_a_new_book():
     code = 200
     response = steps.addABook("Сергей Довлатов", "Чемодан")
@@ -117,7 +117,7 @@ def test_add_a_new_book():
 @allure.epic("Тесты swagger ui")
 @allure.story("Тесты library")
 @allure.feature("Тесты получения списка доступных книг")
-@allure.description("Тест проверяет корректность работы метода post, get и кодов ответа")
+@allure.description("Вроде Вроде тестпроверяет корректность работы метода post, get и кодов ответа")
 def test_available_book1(AddABook):
     book_id = AddABook.json()["id"]
 
@@ -134,7 +134,7 @@ def test_available_book1(AddABook):
 @allure.epic("Тесты swagger ui")
 @allure.story("Тесты library")
 @allure.feature("Тесты получения списка доступных книг")
-@allure.description("Тест проверяет корректность работы метода post, get и кодов ответа")
+@allure.description("Вроде Вроде тестпроверяет корректность работы метода post, get и кодов ответа")
 def test_available_book2(AddABook, UserId):
     added_book_id = AddABook.json()["id"]
 
@@ -154,7 +154,7 @@ def test_available_book2(AddABook, UserId):
 @allure.epic("Тесты swagger ui")
 @allure.story("Тесты library")
 @allure.feature("Тесты получения списка доступных книг")
-@allure.description("Тест проверяет корректность работы метода post, get и кодов ответа")
+@allure.description("Вроде Вроде тестпроверяет корректность работы метода post, get и кодов ответа")
 def test_available_book3(AddABook, UserId):
     added_book_id = AddABook.json()["id"]
 
@@ -175,7 +175,7 @@ def test_available_book3(AddABook, UserId):
 @allure.epic("Тесты swagger ui")
 @allure.story("Тесты library")
 @allure.feature("Тесты получения списка статуса книг")
-@allure.description("Тест проверяет корректность работы метода post, get и кодов ответа")
+@allure.description("Вроде Вроде тестпроверяет корректность работы метода post, get и кодов ответа")
 def test_current_status1(AddABook):
     book_id = AddABook.json()["id"]
 
@@ -192,7 +192,7 @@ def test_current_status1(AddABook):
 @allure.epic("Тесты swagger ui")
 @allure.story("Тесты library")
 @allure.feature("Тесты получения списка статуса книг")
-@allure.description("Тест проверяет корректность работы метода post, get и кодов ответа")
+@allure.description("Вроде тестпроверяет корректность работы метода post, get и кодов ответа")
 def test_current_status2(AddABook, UserId):
     book_id = AddABook.json()["id"]
 
@@ -207,7 +207,7 @@ def test_current_status2(AddABook, UserId):
 @allure.epic("Тесты swagger ui")
 @allure.story("Тесты library")
 @allure.feature("Тесты получения списка статуса книг")
-@allure.description("Тест проверяет корректность работы метода post, get и кодов ответа")
+@allure.description("Вроде тестпроверяет корректность работы метода post, get и кодов ответа")
 def test_current_status3(AddABook, UserId):
     book_id = AddABook.json()["id"]
 
@@ -225,7 +225,7 @@ def test_current_status3(AddABook, UserId):
 @allure.epic("Тесты swagger ui")
 @allure.story("Тесты library")
 @allure.feature("Тесты получения списка статуса книг")
-@allure.description("Тест проверяет корректность работы метода post, get и кодов ответа")
+@allure.description("Вроде тестпроверяет корректность работы метода post, get и кодов ответа")
 def test_current_status4(AddABook, UserId):
     book_id = AddABook.json()["id"]
 
@@ -244,7 +244,7 @@ def test_current_status4(AddABook, UserId):
 @allure.epic("Тесты swagger ui")
 @allure.story("Тесты library")
 @allure.feature("Тесты сдачи книги")
-@allure.description("Тест проверяет корректность работы метода post, get и кодов ответа")
+@allure.description("Вроде тестпроверяет корректность работы метода post, get и кодов ответа")
 def test_return_book1(AddABook, UserId):
     code = 200
     book_id = AddABook.json()["id"]
@@ -262,7 +262,7 @@ def test_return_book1(AddABook, UserId):
 @allure.epic("Тесты swagger ui")
 @allure.story("Тесты library")
 @allure.feature("Тесты сдачи книги")
-@allure.description("Тест проверяет корректность работы метода post, get и кодов ответа")
+@allure.description("Вроде тестпроверяет корректность работы метода post, get и кодов ответа")
 def test_return_book2(AddABook, UserId):
     code = 400
     book_id = AddABook.json()["id"]
@@ -280,7 +280,7 @@ def test_return_book2(AddABook, UserId):
 @allure.epic("Тесты swagger ui")
 @allure.story("Тесты library")
 @allure.feature("Тесты оплаты штрафа")
-@allure.description("Тест проверяет корректность работы метода post и кодов ответа")
+@allure.description("Вроде тестпроверяет корректность работы метода post и кодов ответа")
 def test_pay_fiase1(AddABook, UserId):
     code = 200
     book_id = AddABook.json()["id"]
@@ -301,7 +301,7 @@ def test_pay_fiase1(AddABook, UserId):
 @allure.epic("Тесты swagger ui")
 @allure.story("Тесты library")
 @allure.feature("Тесты оплатф штрафа")
-@allure.description("Тест проверяет корректность работы метода post и кодов ответа")
+@allure.description("Вроде тестпроверяет корректность работы метода post и кодов ответа")
 def test_pay_fiase2(AddABook, UserId):
     code = 200
     book_id = AddABook.json()["id"]
@@ -322,7 +322,7 @@ def test_pay_fiase2(AddABook, UserId):
 @allure.epic("Тесты swagger ui")
 @allure.story("Тесты library")
 @allure.feature("Тесты оплаты штрафа")
-@allure.description("Тест проверяет корректность работы метода post и кодов ответа")
+@allure.description("Вроде тестпроверяет корректность работы метода post и кодов ответа")
 def test_pay_fiase3(AddABook, UserId):
     code = 400
     book_id = AddABook.json()["id"]
